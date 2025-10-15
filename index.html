@@ -460,6 +460,35 @@
     display: block;
     margin: 0 auto;
 }
+
+
+ .flyer-container {
+            width: 300px;
+            height: auto;
+            margin: 20px auto;
+            overflow: hidden;
+            border: 2px solid #333;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .flyer-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .flyer-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .flyer-container:hover img {
+            transform: scale(1.1);
+        }
+        
         
     </style>
 </head>
@@ -587,8 +616,10 @@
                     <div class="show-date">1. November 2025</div>
                     <div class="show-venue">Rock'n'Schauder</div>
                     <div class="show-location">Saal unter den Linden, Laasdorf</div>
-                     <image href="images/schauder.jpg" x="0" y="0" width="120" height="120" clip-path="url(#circle-clip)" />
                 </div>
+                  <div class="flyer-container">
+        <img src="DEIN_BILD_PFAD_HIER.jpg" alt="Rock'n'Schauder Flyer: Weasel & The Cool Cats am 1. November ab 19:00 Uhr in Laasdorf">
+                  </div>
                 
                 <div class="show-item">
                     <div class="show-date">30. Januar 2026</div>
@@ -668,6 +699,7 @@
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96e259cdd5d6e52a',t:'MTc1NTAyNjY0NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
 
